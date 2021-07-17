@@ -104,8 +104,6 @@ disabled = false
 format = '[$symbol$context( \($namespace\))]($style) '
 [kubernetes.context_aliases]
 "gke_maha-mela_asia-south1_mela-cluster" = "mela-cluster"
-"vidur.butalia@mahamela.in@metal.ap-south-1.eksctl.io" = "metal-cluster"
-"vidur.butalia@mahamela.in@namaste.ap-south-1.eksctl.io" = "namaste-cluster"
 [shlvl]
 disabled = false
 format = "[ $shlvl]($style) "
