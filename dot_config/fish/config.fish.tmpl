@@ -6,7 +6,7 @@ fish_add_path /opt/homebrew/opt/libpq/bin
 fish_add_path /opt/homebrew/opt/openssl@1.1/bin
 source ~/google-cloud-sdk/path.fish.inc
 set -gx ANDROID_HOME ~/Library/Android/sdk
-set -gx JAVA_HOME /opt/homebrew/Caskroom/android-studio-preview-beta/2020.3.1.19/Android Studio Preview.app/Contents/jre/Contents/Home
+set -gx JAVA_HOME /opt/homebrew/Caskroom/android-studio-preview-beta/2020.3.1.20/Android Studio Preview.app/Contents/jre/Contents/Home
 {{- else if eq .chezmoi.os "linux" }}
 fish_add_path /snap/bin
 fish_add_path ~/.local/share/umake/bin
@@ -26,7 +26,6 @@ fish_add_path ~/go/bin
 fish_add_path ~/.npm_modules/bin
 fish_add_path ~/.config/composer/vendor/bin
 fish_add_path ~/.emacs.d/bin
-fish_add_path ~/.krew/bin
 
 
 # Quality-of-Life improvements for interactive shells
@@ -39,10 +38,6 @@ if status --is-interactive
     abbr --add --global s-bc bin/console
     abbr --add --global gfap git fetch --all --prune --prune-tags
     abbr --add --global pr gh pr
-    abbr --add --global kube-context kubectl config use-context
-    abbr --add --global mela-context gke_maha-mela_asia-south1_mela-cluster
-    abbr --add --global namaste-context vidur.butalia@mahamela.in@namaste.ap-south-1.eksctl.io
-    abbr --add --global metal-context vidur.butalia@mahamela.in@metal.ap-south-1.eksctl.io
 
     if type -q "lsd" ;
         alias ls="lsd"
