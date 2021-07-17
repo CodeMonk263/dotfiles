@@ -14,7 +14,7 @@ fi
 
 # Add ubuntu-make apps to $PATH if ubuntu-make is installed
 if [ -d "$HOME/.local/share/umake/bin" ] ; then
-    PATH=/home/vidur/.local/share/umake/bin:$PATH
+    PATH=/home/joel/.local/share/umake/bin:$PATH
 fi
 
 # Add Cargo & associated binaries to path if installed
