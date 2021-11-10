@@ -1,0 +1,11 @@
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export ANDROID_HOME=Users/shauryavijay/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export ANDROID_SDK_ROOT=/Users/shauryavijay/Library/Android/sdk
+export JAVA_HOME=$(/usr/libexec/java_home)
+eval "$(starship init zsh)"
