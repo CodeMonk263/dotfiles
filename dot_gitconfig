@@ -18,16 +18,8 @@
     syntax-theme = Nord
     navigate = true
     line-numbers = true
-
 [interactive]
     diffFilter = delta --color-only
-
-[gpg]
-    program = gpg
-[commit]
-    gpgSign = true
-[tag]
-    forceSignAnnotated = false
 [url "git@github.com"]
     insteadOf = gh
     pushInsteadOf = https://github.com/
